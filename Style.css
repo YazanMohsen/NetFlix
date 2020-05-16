@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+}
+
+/**NavBar start*/
+
+.navbar {
+  width: 100vw;
+  height: 15vh;
+  background: #222;
+}
+#MainImage {
+  float: left;
+}
+#MainTitle {
+  font-size: 30px;
+  color: red;
+  float: left;
+  padding: 10px;
+  margin-top: 20px;
+  text-shadow: 7px 5px 3px black;
+}
+#searchbox {
+  margin-top: 35px;
+  padding: 5px;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+
+#optionsMenu {
+  list-style-type: none;
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+
+  font-size: 20px;
+}
+li.optionMenu {
+  padding: 20px;
+  float: left;
+}
+
+i {
+  margin-left: 30%;
+  font-size: 20px;
+}
+
+button#serachbutton {
+  margin-left: 30px;
+  margin-top: 30px;
+  outline: #222 1px solid;
+  outline-offset: -3px;
+}
+i.fa-search {
+  margin-left: 1px;
+  font-size: 17px;
+}
+
+#dropMenu {
+  visibility: hidden;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  outline: #222 1px solid;
+  outline-offset: -3px;
+}
+i.fa-line {
+  margin-left: 1px;
+  font-size: 17px;
+}
+
+@media screen and (min-width: 1420px) {
+  #searchbox {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 1419px) and (min-width: 1180px) {
+  #searchbox {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 1179px) and (min-width: 1012px) {
+  #searchbox {
+    width: 30%;
+  }
+}
+@media screen and (min-width: 792px) and (max-width: 1011px) {
+  ul#optionsMenu {
+    display: none;
+  }
+  #searchbox {
+    width: 40%;
+  }
+
+  #dropMenu {
+    visibility: visible;
+  }
+}
+
+@media screen and (max-width: 791px) {
+  ul#optionsMenu {
+    display: none;
+  }
+  #MainTitle {
+    visibility: hidden;
+  }
+  #searchbox {
+    width: 50%;
+    margin-left: 1px;
+  }
+  button#serachbutton {
+    margin-left: -170px;
+  }
+  i.fa-search {
+    font-size: 20;
+  }
+  #dropMenu {
+    visibility: visible;
+  }
+}
+
+a {
+  color: white;
+}
+
+/**NavBar Ends*/
