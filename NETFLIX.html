@@ -1,0 +1,179 @@
+<!--
+○ Shadows:    
+    text-shadow : x y blur color
+    box-shadow: x y blur color
+
+
+
+○ Browser Prefix :
+    is used to make sure that the browser will 
+    Translate property correctly
+    -webkit-  for chrome
+    -moz-     for mozzila
+    use Autoprefixer 
+
+
+○ USing Emmat:
+    element.class1.class2 
+    element.#id
+    #id.class ->div element
+    div>ul>li*5 is used to make childreen 
+    p{insert Text} to insert text in the elemnt
+
+
+○ Size    
+    vh,vw to be relarive to Screen
+    rem relative to the root of html
+  
+○ calc Function:
+    calc(100px-50px)
+
+
+○ text:
+    text-indent
+    line-height
+    letter-spacing
+    word-spacing
+
+○ control border side
+    border-bottom
+
+○ Outline-offset
+
+○ margin :
+  *use auto for centering block  
+  *use inherit to inherit The parent margin
+  
+
+○ display:
+  *block/*inline
+  *inline-block So You can Give The inline element
+  ability of margin top/bottom
+  *'none' ->take The Element out of flow
+
+○ opacity=0 and visibility:hidden
+    the ELement Stays on the flow but we can't see it 
+
+
+○ background:
+  +background-repeat:
+    *repeat-x
+    *repeat-y
+    *'space' Repeat With Spaces between Photos
+    *'round' 
+
+  +background-size:
+   *'cover' To Cover The Container Regardless of its Size
+   *'contain' go to left and
+    stretched
+
+  +background-attachment:
+    *'fixed' The Photo doesn't move with Content
+    *'Scroll'The Photo moves with Content
+
+  +to optimize
+    :url('/Images/Music.jfif') center/cover no-repeat fixed;
+
+
+○ Media Queries:
+    we can use @media screen a nd 
+
+○ Z-index doesn't work with static
+
+
+○ linear-gradient
+  *:(direction:ex:to  top left,1stcolor,2edcolor,...)
+
+  *:(angle:ex:20 deg,1stcolor,2edcolor,...)
+  *to apply the gradient photo
+  background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.9)),url('/Images/Music.jfif') ;;
+
+
+  
+○ pseudo 
+    p::before/p::after
+    *content is essitnal
+    we use them to put content before and after the elements
+
+
+  
+Selectors:
+  element::first-letter
+  element::first-line
+  :root for Dealing With Whole Page
+  changing the font-size on the root is gonna change font-size of every rem using in the doc
+
+○Transform
+    Translate(x,y):is To move Element using px/%/em
+    scale(x,y):is To scale Element using .5/1/2 ..
+    rotatez(deg):is To rotate Element using deg
+    skew(x,y)انحراف
+
+○ Transition:using when move from one statue to another
+  change over Time
+    1st:selcet The Transition-property
+    2ed:transtion-duration
+    3d:transition-delay:is to set how long you will wait before start  doing as well as end doing;
+    4th:transition-timing-function
+      *ease(default):slow start,fast,slow end 
+      *ease-in-out:slow start,fast,slow end
+      *ease-in:slow start
+      *ease-out:slow end
+      *linear:same speed start to end 
+
+○ Animation:
+    1st.animation-name:move;
+    2ed.animation-duration:10s
+    3d.animtaion-iteration-count
+    this tell the animation how many time it will it will itrate
+
+
+    @keyframes animation-name
+    {
+    (0%of the time)
+    0%{
+
+    }
+
+    1%{
+        
+    }
+    ..
+    }
+
+○ Forms,Select,option,input
+
+○ CSS Variables:we used them To store Values
+    :root{
+      Defining The variables here makes them global
+    }
+    element{
+        Defining The variables here makes them local
+    }
+    How TO Define?
+    --variableName:value;
+    note:value could be any vlaue color number,...
+    ex:
+    :root{
+    --redcolor:#ff0000;
+    }
+    How to use it?
+    property:var(--VariableName)
+    ex:
+    div{
+      color:var(--redcolor);
+    }
+    you can't use The Same Variable Name twice
+
+-->
+
+<!DOCTYPE html>
+<hmtl>
+  <head>
+    <title>NetFlix</title>
+
+    <link href="/fontawesome-free-5.13.0-web/css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/NETFLIX.css " />
+  </head>
+  <body></body>
+</hmtl>
