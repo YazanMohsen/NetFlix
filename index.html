@@ -1,8 +1,4 @@
 <!--
-○ Shadows:    
-    text-shadow : x y blur color
-    box-shadow: x y blur color
-
 
 
 ○ Browser Prefix :
@@ -20,11 +16,6 @@
     div>ul>li*5 is used to make childreen 
     p{insert Text} to insert text in the elemnt
 
-
-○ Size    
-    vh,vw to be relarive to Screen
-    rem relative to the root of html
-  
 ○ calc Function:
     calc(100px-50px)
 
@@ -35,50 +26,18 @@
     letter-spacing
     word-spacing
 
-○ control border side
-    border-bottom
-
-○ Outline-offset
 
 ○ margin :
   *use auto for centering block  
   *use inherit to inherit The parent margin
   
 
-○ display:
-  *block/*inline
-  *inline-block So You can Give The inline element
-  ability of margin top/bottom
-  *'none' ->take The Element out of flow
-
-○ opacity=0 and visibility:hidden
-    the ELement Stays on the flow but we can't see it 
-
-
-○ background:
-  +background-repeat:
-    *repeat-x
-    *repeat-y
-    *'space' Repeat With Spaces between Photos
-    *'round' 
-
-  +background-size:
-   *'cover' To Cover The Container Regardless of its Size
-   *'contain' go to left and
-    stretched
-
   +background-attachment:
     *'fixed' The Photo doesn't move with Content
     *'Scroll'The Photo moves with Content
 
-  +to optimize
-    :url('/Images/Music.jfif') center/cover no-repeat fixed;
 
-
-○ Media Queries:
-    we can use @media screen a nd 
-
-○ Z-index doesn't work with static
+  ○ Z-index doesn't work with static
 
 
 ○ linear-gradient
@@ -104,16 +63,10 @@ Selectors:
   changing the font-size on the root is gonna change font-size of every rem using in the doc
 
 ○Transform
-    Translate(x,y):is To move Element using px/%/em
-    scale(x,y):is To scale Element using .5/1/2 ..
     rotatez(deg):is To rotate Element using deg
     skew(x,y)انحراف
 
 ○ Transition:using when move from one statue to another
-  change over Time
-    1st:selcet The Transition-property
-    2ed:transtion-duration
-    3d:transition-delay:is to set how long you will wait before start  doing as well as end doing;
     4th:transition-timing-function
       *ease(default):slow start,fast,slow end 
       *ease-in-out:slow start,fast,slow end
@@ -170,7 +123,7 @@ https://codepen.io/freeCodeCamp/full/VPaoNP
 -->
 
 <!DOCTYPE html>
-<hmtl>
+<html>
   <head>
     <title>NetFlix</title>
 
@@ -189,58 +142,74 @@ https://codepen.io/freeCodeCamp/full/VPaoNP
         <div id="MainTitle">
           NETFLIX
         </div>
-        
-      </div>
-      <button id="serachbutton">     
-         <i  class="fas fa-search fa-2x"></i>
-      </button>
-  
-      <input id="searchbox" type="text" placeholder="search" />
 
-        
+        <button id="serachbutton">
+          <i class="fas fa-search fa-2x"></i>
+        </button>
+
+        <input id="searchbox" type="text" placeholder="search" />
+
         <ul id="optionsMenu">
-         <a href="index.html"> <li class="optionMenu">
-              <i  class="fas fa-home fa-2x menu"></i>
-          </li>
-         </a>
-         <a href="index.html">
-           <li class="optionMenu ">
-              <i  class="fas fa-fire 
-              fa-2x"></i>
-          </li>
-          </a> 
-          <a href="index.html"><li class="optionMenu">
-              <i  class="fas fa-sign fa-2x menu"></i>
-          </li>
+          <a href="index.html">
+            <li class="optionMenu">
+              <i class="fas fa-home fa-2x menu"></i>
+            </li>
           </a>
-          <a href="index.html"> <li class="optionMenu">
-              <i  class="fas fa-question fa-2x menu"></i>
-          </li>
-         </a>
-
-
+          <a href="index.html">
+            <li class="optionMenu">
+              <i class="fas fa-fire fa-2x"></i>
+            </li>
+          </a>
+          <a href="index.html"
+            ><li class="optionMenu">
+              <i class="fas fa-sign fa-2x menu"></i>
+            </li>
+          </a>
+          <a href="index.html">
+            <li class="optionMenu">
+              <i class="fas fa-question fa-2x menu"></i>
+            </li>
+          </a>
         </ul>
-    <button id="dropMenu">     
-         <i  class="fas fa-align-justify fa-2x "></i>
-      </button>
-  
-
+        <button id="dropMenu">
+          <i class="fas fa-align-justify fa-2x"></i>
+        </button>
       </nav>
     </header>
-    
     <main>
-      <!-- 
-      
-      Movies
-      Seris 
-      Music 
-    
-    --></main>
+      <a href="" class="Mainblock" id="Movies"
+        ><span class="MainText">Movies</span></a
+      >
+      <a href="" class="Mainblock" id="Music"
+        ><span class="MainText">Music</span></a
+      >
+      <a href="" class="Mainblock" id="Series"
+        ><span class="MainText">Series</span></a
+      >
+      <a href="" class="Mainblock" id="Games"
+        ><span class="MainText">Games</span></a
+      >
+    </main>
+
     <footer>
-      <!--
-        Contact US
-        About
-      -->
+      <div id="HELP">
+        HELP
+        <ul>
+          <i class="fab fa-facebook fa-1x"> <li>Facebook</li></i>
+
+          <i class="fab fa-twitter fa-1x"> <li>Twitter</li></i>
+
+          <i class="fab fa-youtube fa-1x"> <li>Youtube</li></i>
+
+          <i class="fab fa-gmail fa-1x"> <li>Gmail</li></i>
+        </ul>
+        <div id="wishs">NetFlix Team Wich You ALL The Best</div>
+      </div>
+
+      <div id="about">ABOUT
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis quidem voluptatum culpa odit aliquid nisi assumenda debitis hic minus fugiat enim, aut ea ad nesciunt eum, voluptas consequatur optio doloribus odio possimus atque eaque blanditiis exercitationem ex. Enim repellendus, earum dolorem, repudiandae, assumenda asperiores eum possimus culpa illum quam est!</p>
+      </div>
     </footer>
+    <div id="copyrights">Copyright &copy; 2020 NETFLIX</div>
   </body>
-</hmtl>
+</html>

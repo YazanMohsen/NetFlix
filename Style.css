@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  box-sizing: border-box;
 }
 
 /**NavBar start*/
@@ -8,8 +9,6 @@
   width: 100vw;
   height: 15vh;
   background: #222;
-  position: fixed;
-  top: 0;
 }
 #MainImage {
   float: left;
@@ -39,18 +38,18 @@
 
   font-size: 20px;
 }
-li.optionMenu {
+a li.optionMenu {
   padding: 20px;
   float: left;
+  color: white;
 }
-
 i {
   margin-left: 30%;
   font-size: 20px;
 }
 
 button#serachbutton {
-  padding:2px;
+  padding: 2px;
   margin-left: 30px;
   margin-top: 30px;
   outline: #222 1px thick;
@@ -58,7 +57,6 @@ button#serachbutton {
   border-radius: 4px;
   outline-offset: -3px;
   box-shadow: 5px 5px 8px black;
-
 }
 i.fa-search {
   margin-left: 1px;
@@ -73,17 +71,15 @@ i.fa-search {
   right: 30px;
   outline: #222 1px solid;
   outline-offset: -3px;
-  padding-left:10px;
-  padding-right:10px;
-  padding-top:5px;
-  padding-bottom:5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
-.fa-align-justify{
-
+.fa-align-justify {
   margin-left: 1px;
   font-size: 20px;
 }
-
 
 @media screen and (min-width: 1420px) {
   #searchbox {
@@ -132,12 +128,160 @@ i.fa-search {
   }
   #dropMenu {
     visibility: visible;
-
   }
 }
 
-a {
+/**NavBar Ends*/
+
+/**main starts*/
+body {
+  background-image: url("Images/Friends.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+main {
+  width: 100vw;
+  height: 100vh;
+}
+
+a.Mainblock {
+  width: 45%;
+  height: 50%;
+  display: block;
+  float: left;
+  margin-left: 45px;
+  margin-top: 40px;
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  transition: transform 2s;
+  box-shadow: 5px 5px 8px black;
+}
+.Mainblock:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.MainText {
+  position: absolute;
+  bottom: 0;
+  font-size: 30px;
+  background-color: black;
+  display: block;
+  width: 50%;
+  padding: 10px;
+  border-top-right-radius: 20px;
+  opacity: 0.7;
+  transition: opacity 2s, transform 2s;
+}
+.MainText:hover {
+  transform: translateY(10px);
+  opacity: 0.3;
+}
+
+#Movies {
+  background: url("Images/inception.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#Music {
+  background: url("Images/Music.jfif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#Series {
+  background: url("Images/Series.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#Games {
+  background: url("Images/Game.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 1011px) {
+  a.Mainblock {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 50px;
+    width: 100%;
+  }
+  a.Mainblock:hover {
+    transform: scale(0.9, 0.9);
+  }
+}
+
+footer {
+  width: 100vw;
+  height: 10vh;
+  margin-top: 200px;
+  opacity: 0.9;
+}
+#HELP,
+#about {
+  float: left;
+  display: block;
+  width: 50vw;
+  height: 50vh;
+  text-align: center;
+  font-size: 30px;
+}
+#HELP {
+  background-color: #000044;
+  color: white;
+  padding-top: 30px;
+}
+
+#about {
+  padding-top: 30px;
+  background-color: #444;
   color: white;
 }
 
-/**NavBar Ends*/
+#copyrights {
+  background-color: #222;
+  margin-top: 40vh;
+  width: 100vw;
+  height: 10vh;
+  color: #fff;
+  padding-top: 15px;
+  text-align: center;
+  font-size: 30px;
+}
+
+footer li {
+  text-align: left;
+  list-style-type: none;
+  font-size: 30px;
+  margin-top: 10px;
+  margin-left: 0;
+}
+
+.fab {
+  display: inline;
+  float: left;
+  margin-top: 30px;
+  margin-left: 40px;
+}
+#wishs{
+  display: block;
+  clear: both;
+  font-size: 40px;
+  padding-top: 60px;
+}
+@media screen and (max-width: 1011px) {
+  #HELP,
+  #about {
+    clear: both;
+    width: 100vw;
+  }
+  #copyrights {
+    clear: both;
+  }
+}
