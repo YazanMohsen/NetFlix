@@ -8,6 +8,8 @@
   width: 100vw;
   height: 15vh;
   background: #222;
+  position: fixed;
+  top: 0;
 }
 #MainImage {
   float: left;
@@ -25,6 +27,7 @@
   padding: 5px;
   margin-left: 10px;
   border-radius: 10px;
+  box-shadow: 5px 5px 8px black;
 }
 
 #optionsMenu {
@@ -47,14 +50,20 @@ i {
 }
 
 button#serachbutton {
+  padding:2px;
   margin-left: 30px;
   margin-top: 30px;
-  outline: #222 1px solid;
+  outline: #222 1px thick;
+  background-color: #111;
+  border-radius: 4px;
   outline-offset: -3px;
+  box-shadow: 5px 5px 8px black;
+
 }
 i.fa-search {
   margin-left: 1px;
   font-size: 17px;
+  color: #fff;
 }
 
 #dropMenu {
@@ -64,11 +73,17 @@ i.fa-search {
   right: 30px;
   outline: #222 1px solid;
   outline-offset: -3px;
+  padding-left:10px;
+  padding-right:10px;
+  padding-top:5px;
+  padding-bottom:5px;
 }
-i.fa-line {
+.fa-align-justify{
+
   margin-left: 1px;
-  font-size: 17px;
+  font-size: 20px;
 }
+
 
 @media screen and (min-width: 1420px) {
   #searchbox {
@@ -117,6 +132,7 @@ i.fa-line {
   }
   #dropMenu {
     visibility: visible;
+
   }
 }
 
